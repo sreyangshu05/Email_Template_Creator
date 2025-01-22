@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Template</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+    .email-container {
+      width: 600px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      border-radius: 10px;
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    .email-header {
+      text-align: center;
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      border-bottom: 3px solid #388E3C;
+    }
+    .email-content {
+      padding: 20px;
+      color: #333;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .email-content a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+    .email-footer {
+      background-color: #f9f9f9;
+      color: #777;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      border-top: 2px solid #e0e0e0;
+    }
+    .email-footer a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <div class="email-header">{{title}}</div>
+    <div class="email-content">
+      {{content}}
+    </div>
+    <div><img src="{{imageUrl}}" alt="Image"></div>
+    <div class="email-footer">
+      <p>{{footer}}</p>
+      <p><a href="{{unsubscribeLink}}">Unsubscribe</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,177 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #444;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Styled Button */
+.StyledButton {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+  margin: 10px;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.StyledButton:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.StyledButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(38, 143, 255, 0.5);
+}
+
+.StyledButton svg {
+  margin-right: 8px;
+}
+
+/* Input Fields */
+.input-group {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus, textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+/* Dropzone */
+input[type="file"] {
+  display: none;
+}
+
+input[type="file"]:focus {
+  outline: none;
+}
+
+/* Spinner */
+.spinner-border {
+  display: block;
+  margin: 30px auto;
+}
+
+/* Layout */
+.layout-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.layout-container iframe {
+  border-radius: 8px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+    min-height: auto;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .input-group {
+    max-width: 100%;
+  }
+
+  .StyledButton {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  textarea {
+    height: 120px;
+  }
+}
+
+/* Toast Notifications */
+.Toastify__toast--success {
+  background-color: #4caf50;
+  color: white;
+  font-weight: 600;
+}
+
+.Toastify__toast--error {
+  background-color: #f44336;
+  color: white;
+  font-weight: 600;
+}
+
+.Toastify__toast--info {
+  background-color: #2196f3;
+  color: white;
+  font-weight: 600;
+}
